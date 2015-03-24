@@ -8,6 +8,15 @@ Date 3-24-2015
 Functionality:
     - Clone and install dependencies for our Girl Develop It San Jose repo
 
+How to run:
+	- change your directory to where you want to install the GDI repo/folder
+	- paste this script into that folder
+	- type this command into command line:
+	sh macinstall.sh
+
+	- if it asks for your computer password, enter it
+	- when the script is done, open the index.html page from the cloned repo
+
 Note:
     -  This will only work for Macs
 
