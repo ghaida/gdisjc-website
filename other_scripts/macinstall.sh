@@ -31,12 +31,6 @@ function print_good ()
     echo "\x1B[01;32m(>'-')>\x1B[0m $1"
 }
 
-function print_error ()
-{
-# Prints Red
-    echo "\x1B[01;31m(>'-')>\x1B[0m $1"
-}
-
 function print_status ()
 {
 # Prints Blue
@@ -58,7 +52,7 @@ cd gdisjc-website
 
 function install_grunt_cli 
 {
-### clone repo
+### install grunt CLI
 print_status "Installing Grunt Command Line tools"
 sudo npm install -g grunt-cli
 print_good "Installed successfully"
@@ -66,7 +60,7 @@ print_good "Installed successfully"
 
 function install_npm_bower
 {
-### clone repo
+### Install bower through node package manager
 print_status "Installing Bower through Node"
 sudo npm install -g bower
 print_good "Installed successfully"
