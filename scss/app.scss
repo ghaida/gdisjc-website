@@ -38,3 +38,13 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+body {
+	background: $primary-color;
+	background: url(..image01.jpg);
+    background-size: 100%;
+	background-attachment:fixed;
+	}
+figure {
+	width: 80%;
+	}
