@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+   
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.7/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.7/mapbox.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+<div id='map'></div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiYXJjNjc4OSIsImEiOiIyUU9lcmdJIn0.nZKA7rHTaVFz-M2oTt2ZMA';
+
+
+
+
+
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+ 
+   var geojson=[
+        {
+        "type": "Feature",
+        "geometry":{
+            "type":"Point"
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+            "coordinates": [
+              -77.03221142292,
+              38.913371603574
+            ]
+        },
+        "properties": {
+            "title": "Peregrine Espresso",
+            "description": "1718 14th St NW, Washington, DC",
+            // one can customize markers by adding simplestyle properties
+            // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+            "marker-size": "large",
+            "marker-color": "#BE9A6B",
+            "marker-symbol": "cafe"
+        }
+    },
+    {
+
+        "type":"Feature",
+        "geometry":{
+            "type":'Point',
+           "coordinates": [-80.0,40.0]
+        },
+        "properties":{
+            "title": "Peregrine Espresso",
+            "description": "1718 14th St NW, Washington, DC",
+            // one can customize markers by adding simplestyle properties
+            // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+            "marker-size": "large",
+            "marker-color": "#BE9A6B",
+            "marker-symbol": "cafe"
+        }
+    }
+    ]
+
+    L.mapbox.map('map', 'examples.map-i86nkdio')
+  .setView([37.8, -96], 4)
+  .featureLayer.setGeoJSON(geojson);
+
+</script>
+
+</body>
+</html>
