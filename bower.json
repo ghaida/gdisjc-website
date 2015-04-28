@@ -1,6 +1,7 @@
 {
   "name": "foundation-libsass-template",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "slick.js": "~1.5.2"
   }
 }
