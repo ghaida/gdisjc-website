@@ -6,6 +6,8 @@
     <title>GDI San Jose</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
     <div class="row">
@@ -17,12 +19,11 @@
     <div class="row">
       <div class="large-8 medium-12 small-12 columns">
         <div>
-          <main><h3>Women Developers and Programmers!</h3>
-          <strong>Want to learn how to code? Have a great idea? Don't be shy. Develop it.</strong>
-
-            <p>It can be intimidating for women to learn and ask questions when they are in an extreme minority. While open and welcoming, today's budding developer community is up to 91% male. There isn't a comfortable place where women can learn at their own pace and not be afraid to ask "stupid questions."</p>
-
-            <p>We decided it was time to provide a place where all questions are OK and everyone can learn in a supportive environment. Our courses focus on coding, leveraging existing technology, and having something to show for it (aka building sweet websites).</p>
+          <main><div class="single-item">
+  <div><img src="image/image01.jpg"></div>
+  <div><img src="image/image02.jpg"></div>
+  <div><img src="image/image03.jpg"></div>
+</div>
           <div class="row">
             <div class="large-6 medium-6 columns">
               <p><a href="http://github.com/zurb/foundation">GDI San Jose on Github</a><br />Latest code, issue reports, feature requests and more.</p>
@@ -52,5 +53,15 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.single-item').slick({
+        setting-name: setting-value
+      });
+    });
+  </script>
   </body>
 </html>
