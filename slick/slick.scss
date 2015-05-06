@@ -94,3 +94,8 @@
         border: 1px solid transparent;
     }
 }
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+}
